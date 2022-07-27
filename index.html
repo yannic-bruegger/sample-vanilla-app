@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" type="module"></script>
+  <title>Sample Client App</title>
+</head>
+<body>
+  <h1>Sample Client App</h1>
+  <h1>List</h1>
+  <a href="form-new">Create Item</a>
+  <table id="items">
+    <tr>
+      <th>Actions</th>
+      <th>Title</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+    </tr>
+    <template id="item">
+      <tr>
+        <td>
+          <button data-view>👁️</button>
+          <button data-edit>🖊️</button>
+          <button data-delete>🗑️</button>
+        </td>
+        <td data-field="title"></td>
+        <td data-field="name">Name</td>
+        <td data-field="age">Age</td>
+        <td data-field="gender">Gender</td>
+      </tr>
+    </template>
+  </table>
+
+</body>
+</html>
